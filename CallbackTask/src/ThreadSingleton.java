@@ -52,8 +52,4 @@ public class ThreadSingleton extends Thread {
 
     }
 
-    @Override
-    public void interrupt() {
-        super.interrupt();
-    }
 }
