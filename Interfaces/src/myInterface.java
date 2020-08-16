@@ -8,11 +8,23 @@ An interface cannot contain a constructor (as it cannot be used to create object
 
 public interface myInterface {
 
-    /*So an interface can have methods and variables*/
+    /*
+    *  You can embed a variable
+    *  You can create and instanciate a nested class (note its going to be static and final by default)
+    *  Declare some muted methods.
+    * */
 
-    public String myVariable1 = "Interface say : Hello World";
+    String myVariable1 = "Interface say : Hello World";
+    myExtrangeClass  myVirus = new myExtrangeClass();
 
-    public void action1();
-    public void action2();
-    public void action3();
+    void action1();
+    void action2();
+    void action3();
+
+    class myExtrangeClass{
+        public void action4(int valor1 , int valor2){
+            System.out.println("La suma es: "+(valor1+valor2));
+        }
+    }
+
 }
